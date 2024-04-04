@@ -1,5 +1,5 @@
 <resources>
-    <string name="default_playlist_url" translatable="false">http://openwrt.lan/iptv.m3u</string>
+    <string name="default_playlist_url" translatable="false">http://iptv.lan/iptv.m3u</string>
     <string name="default_buffer_duration" translatable="false">500</string>
 
     <string name="app_name">MyTV</string>
