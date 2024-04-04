@@ -265,13 +265,13 @@ open class MainActivity : AppCompatActivity() {
         }
 
         return when (keyCode) {
-            KeyEvent.KEYCODE_DPAD_UP, KeyEvent.KEYCODE_CHANNEL_DOWN -> {
-                switchChannel(NEXT)
+            KeyEvent.KEYCODE_DPAD_UP, KeyEvent.KEYCODE_CHANNEL_UP -> {
+                switchChannel(PREV)
                 return true
             }
 
-            KeyEvent.KEYCODE_DPAD_DOWN, KeyEvent.KEYCODE_CHANNEL_UP -> {
-                switchChannel(PREV)
+            KeyEvent.KEYCODE_DPAD_DOWN, KeyEvent.KEYCODE_CHANNEL_DOWN -> {
+                switchChannel(NEXT)
                 return true
             }
 
