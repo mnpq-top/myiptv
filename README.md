@@ -25,7 +25,7 @@ http://192.168.1.1:4022/udp/239.9.9.9:9999
 ```
 Use `x-tvg-url` to specify EPG URL to get EPG (in XMLTV format). 
 Use `tvg-id` to match channel in EPG, there is no name match (yet).
-This player will try to open http://openwrt.lan/iptv.m3u by default.
+This player will try to open http://iptv.lan/iptv.m3u by default.
 
 ### EPG URL
 An optional EPG URL is used to tell player where is the EPG, it needs to point to a XMLTV file.
