@@ -242,11 +242,6 @@ open class MainActivity : AppCompatActivity() {
     }
 
     override fun onKeyUp(keyCode: Int, event: KeyEvent?): Boolean {
-        if (keyCode == KeyEvent.KEYCODE_MENU) {
-            showConfig()
-            return true
-        }
-
         val layout = findFrameLayout(R.id.playlist_fragment)
         if (layout.isVisible) {
             return when (keyCode) {
@@ -270,12 +265,12 @@ open class MainActivity : AppCompatActivity() {
         }
 
         return when (keyCode) {
-            KeyEvent.KEYCODE_DPAD_UP, KeyEvent.KEYCODE_CHANNEL_UP -> {
+            KeyEvent.KEYCODE_DPAD_UP, KeyEvent.KEYCODE_CHANNEL_DOWN -> {
                 switchChannel(NEXT)
                 return true
             }
 
-            KeyEvent.KEYCODE_DPAD_DOWN, KeyEvent.KEYCODE_CHANNEL_DOWN -> {
+            KeyEvent.KEYCODE_DPAD_DOWN, KeyEvent.KEYCODE_CHANNEL_UP -> {
                 switchChannel(PREV)
                 return true
             }
